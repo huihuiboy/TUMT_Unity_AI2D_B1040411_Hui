@@ -14,9 +14,9 @@ public class KID : MonoBehaviour {
     public state _state;
 
     [Header("對話")]
-    public string SayStart = "早安呀~咳咳咳";
-    public string SayNotComplete = "咳....咳咳";
-    public string SayComplete = "穴穴~好多了";
+    public string SayStart = "Morning~*cough cough*";
+    public string SayNotComplete = "*cough cough...*";
+    public string SayComplete = "Oh dear thanks!!";
     [Header("對話速度")]
     public float Speed = 1.1f;
     [Header("任務相關")]
@@ -71,7 +71,7 @@ public class KID : MonoBehaviour {
             case state.Complete:
                 StartCoroutine(ShowDialog(SayComplete));
                 final.SetActive(true);
-                fin.text = "上課辛苦惹";
+                fin.text = "Get more rest!!";
 
                 break;
             case state.NotComplete:

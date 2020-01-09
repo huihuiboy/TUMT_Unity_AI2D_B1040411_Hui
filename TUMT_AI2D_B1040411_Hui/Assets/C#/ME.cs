@@ -58,7 +58,7 @@ public class ME : MonoBehaviour {
         if(hp == 0 || this.transform.position.y <= -3.5)
         {
            final.SetActive(true);
-            fin.text = "繼續咳QQ";
+            fin.text = "So sad QQQ";
         }
     }
     //固定事件更新
